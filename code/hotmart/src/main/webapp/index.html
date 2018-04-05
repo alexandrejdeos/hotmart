@@ -24,27 +24,23 @@
 				</ul>
 			</div>
 		</nav>
-
-		<input id="fileupload" type="file" data-url="/file/uploadFile">
-
-		<div id="progress">
-			<div style="width: 0%;"></div>
+		<div class="container white" style="width: 90%; margin-top: 15px;">
+			<input id="fileupload" type="file" data-url="/file/uploadFile">
+			<table id="uploaded-files">
+				<thead>
+					<tr>
+						<th>Login Usuário</th>
+						<th>Nome do Arquivo</th>
+						<th>Status Upload</th>
+						<th>Tempo de envio</th>
+						<th>Numero de blocos</th>
+						<th>Download</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
 		</div>
-
-		<table id="uploaded-files">
-			<thead>
-				<tr>
-					<th>Login Usuário</th>
-					<th>Nome do Arquivo</th>
-					<th>Status Upload</th>
-					<th>Tempo de envio</th>
-					<th>Numero de blocos</th>
-					<th>Download</th>
-				</tr>
-			</thead>
-			<tbody>
-			</tbody>
-		</table>
 	</form>
 
 	<form id="logoutForm" action="/logout" method="post"></form>
