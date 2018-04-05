@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotmart</title>
+
+<link rel="stylesheet"
+	href="/resources/plugins/materialize/css/materialize.min.css"></link>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet"></link>
+<link rel="stylesheet"
+	href="/resources/plugins/materialize/css/materialize.min.css"></link>
+<link rel="stylesheet" href="/resources/plugins/hotmart/css/hotmart.css"></link>
+
+</head>
+
+<body>
+	<form>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo" id="nameUsuarioLogado">Usuário: </a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="#!" onclick="$('#logoutForm').submit()">Sair</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<input id="fileupload" type="file" data-url="/file/uploadFile">
+
+		<div id="progress">
+			<div style="width: 0%;"></div>
+		</div>
+
+		<table id="uploaded-files">
+			<thead>
+				<tr>
+					<th>Login Usuário</th>
+					<th>Nome do Arquivo</th>
+					<th>Status Upload</th>
+					<th>Tempo de envio</th>
+					<th>Numero de blocos</th>
+					<th>Download</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</form>
+
+	<form id="logoutForm" action="/logout" method="post"></form>
+	<script src="/resources/plugins/jquery-3.3.1/js/jquery-3.3.1.min.js"></script>
+	<script src="/resources/plugins/jquery-3.3.1/js/jquery-ui.min.js"></script>
+	<script
+		src="/resources/plugins/jquery-3.3.1/js/jquery.iframe-transport.js"></script>
+	<script src="/resources/plugins/jquery-3.3.1/js/jquery.fileupload.js"></script>
+	<script src="/resources/plugins/hotmart/js/hotmart.js"></script>
+	<script src="/resources/plugins/materialize/js/materialize.min.js"></script>
+</body>
+</html>
